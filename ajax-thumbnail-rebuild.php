@@ -25,6 +25,10 @@
 
 class AjaxThumbnailRebuild {
 
+	function __construct(){
+
+	}
+	
 	function AjaxThumbnailRebuild() {
 		add_action( 'admin_menu', array(&$this, 'addAdminMenu') );
 		add_filter( 'attachment_fields_to_edit', array(&$this, 'addRebuildSingle'), 10, 2 );
